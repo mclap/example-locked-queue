@@ -24,9 +24,9 @@ public:
 	void Broadcast() throw();
 
 private:
-	class PrivateData;
+	class PrivateImpl;
 
-	PrivateData *m_pimpl;
+	PrivateImpl *m_pimpl;
 
 private:
 	/* prohibit copying */

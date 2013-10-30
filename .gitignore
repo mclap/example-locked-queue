@@ -4,3 +4,9 @@ Release
 *.exe
 *.obj
 *.lib
+CMakeCache.txt
+CMakeFiles
+Makefile
+*.cmake
+Example/QueueExample
+*.a
