@@ -89,13 +89,13 @@ void WaitLock::Broadcast() throw()
 	m_pimpl->Broadcast();
 }
 
-Guard::Guard(WaitLock *lock)
+Guard::Guard(WaitLock *lock) throw()
 	: m_lock(lock)
 {
 	m_lock->Lock();
 }
 
-Guard::~Guard()
+Guard::~Guard() throw()
 {
 	m_lock->Unlock();
 }

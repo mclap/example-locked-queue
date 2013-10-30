@@ -73,7 +73,6 @@
     <ClInclude Include="WaitLock.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LockedQueue.cpp" />
     <ClCompile Include="WaitLock.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

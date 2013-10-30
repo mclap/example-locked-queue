@@ -38,8 +38,8 @@ private:
 class Guard
 {
 public:
-	Guard(WaitLock *lock);
-	~Guard();
+	Guard(WaitLock *lock) throw();
+	~Guard() throw();
 
 private:
 	WaitLock *m_lock;

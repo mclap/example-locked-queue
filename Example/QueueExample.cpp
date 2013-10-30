@@ -3,7 +3,7 @@
 
 int main()
 {
-	LockedQueue queue;
+	LockedQueue<int> queue;
 
 	queue.Start();
 	queue.Stop();
