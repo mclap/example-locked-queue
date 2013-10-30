@@ -35,6 +35,8 @@ public:
 	{
 		Guard guard(&m_lock);
 		m_items.push_back(elm);
+		/* Wake up single waiter */
+		m_lock.Signal();
 	}
 
 	/** Extract single item from the head of queue.
